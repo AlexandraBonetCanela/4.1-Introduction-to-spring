@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "991e0501-1cd5-40fd-8810-7c4e592eb429",
+		"name": "Maven Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13728867"
+	},
+	"item": [
+		{
+			"name": "HelloWorld2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Server}}:{{Port}}/HelloWorld2/Alex",
+					"host": [
+						"{{Server}}"
+					],
+					"port": "{{Port}}",
+					"path": [
+						"HelloWorld2",
+						"Alex"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HelloWorld",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Server",
+			"value": "http://localhost",
+			"type": "string"
+		},
+		{
+			"key": "Port",
+			"value": "9000",
+			"type": "string"
+		}
+	]
+}
